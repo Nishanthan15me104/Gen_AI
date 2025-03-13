@@ -2,7 +2,7 @@
 
 News Research Tool is a user-friendly news research tool designed to simplify information retrieval from online articles. It allows users to input news article URLs, process their content, and then ask questions to receive relevant insights, particularly focused on the stock market and financial domain.
 
-![image of webpage](equity_research_tool\news_research_tool.jpg)
+![image of webpage:](news_research_tool.jpg)
 
 ## Features
 
