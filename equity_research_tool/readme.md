@@ -1,6 +1,8 @@
-# RockyBot: News Research Tool
+# News Research Tool
 
-RockyBot is a user-friendly news research tool designed to simplify information retrieval from online articles. It allows users to input news article URLs, process their content, and then ask questions to receive relevant insights, particularly focused on the stock market and financial domain.
+News Research Tool is a user-friendly news research tool designed to simplify information retrieval from online articles. It allows users to input news article URLs, process their content, and then ask questions to receive relevant insights, particularly focused on the stock market and financial domain.
+
+![image of webpage](equity_research_tool\news_research_tool.jpg)
 
 ## Features
 
@@ -10,48 +12,6 @@ RockyBot is a user-friendly news research tool designed to simplify information 
 * **Interactive Querying:** Interact with the LLM (OpenAI's model) by inputting queries and receiving answers derived from the processed articles, along with the source URLs for verification.
 * **Persistent Index:** The FAISS index is saved in a local file (pickle format) for future use, allowing for faster subsequent queries without reprocessing the URLs.
 
-## Installation
-
-1.  Clone the repository to your local machine:
-
-    ```bash
-    git clone <repository_url>  # Replace <repository_url> with your repository's URL
-    cd <repository_name>        # Replace <repository_name> with your repository's name
-    ```
-
-2.  Create a virtual environment (recommended):
-
-    ```bash
-    python -m venv venv
-    ```
-
-3.  Activate the virtual environment:
-
-    * **On Windows (PowerShell):**
-
-        ```bash
-        .\venv\Scripts\activate
-        ```
-
-    * **On macOS/Linux:**
-
-        ```bash
-        source venv/bin/activate
-        ```
-
-4.  Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-5.  Create a `.env` file in the project's root directory and add your OpenAI API key:
-
-    ```
-    OPENAI_API_KEY=YOUR_OPENAI_API_KEY
-    ```
-
-    (Replace `YOUR_OPENAI_API_KEY` with your actual OpenAI API key.)
 
 ## Usage/Examples
 
@@ -75,7 +35,7 @@ RockyBot is a user-friendly news research tool designed to simplify information 
     * Splits the text into manageable chunks.
     * Generates embedding vectors for the text chunks.
     * Builds and indexes the vectors using FAISS for efficient retrieval.
-    * Saves the FAISS index to a local file in pickle format (`faiss_store_openai.pkl`) for future use.
+    * Saves the FAISS index to a local file in pickle format (`faiss_store_google_palm.pkl`) for future use.
 
 6.  Once the processing is complete, you can ask questions related to the content of the processed news articles in the main text input area.
 
@@ -95,4 +55,8 @@ You can use these URLs to test the application and ask questions like:
 * "What new car did Tata Motors launch?"
 * "What are Tata Motors and Mahindra gaining certificates for?"
 
-## Project Structure
+## Acknowledgements
+
+This project was inspired by the work of Dhaval Patel from codebasiscs
+
+* [https://github.com/codebasics/](https://github.com/codebasics/)
